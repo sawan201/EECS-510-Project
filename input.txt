@@ -1,0 +1,23 @@
+states:q0,q1,q2
+input_symbols:0,1,2,3,4,5,6,7,8,9,+,-,*,/,(,),$
+stack_symbols:X
+start_state:q0
+accept_states:q2
+transitions:
+q0 ( e -> q0 X
+q0 0 e -> q1 X
+q0 1 e -> q1 X
+q0 2 e -> q1 X
+q0 3 e -> q1 X
+q0 4 e -> q1 X
+q0 5 e -> q1 X
+q0 6 e -> q1 X
+q0 7 e -> q1 X
+q0 8 e -> q1 X
+q0 9 e -> q1 X
+q1 ) X -> q1 e
+q1 + X -> q0 e
+q1 - X -> q0 e
+q1 * X -> q0 e
+q1 / X -> q0 e
+q1 $ X -> q2 e
